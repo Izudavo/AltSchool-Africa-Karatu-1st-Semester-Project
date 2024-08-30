@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>David Obinta Altschooler - About Me</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+    <label for="nav-toggle" class="nav-toggle">
+      <span class="nav-toggle-icon"></span>
+    </label>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#school-id">School ID</a></li>
+      <li><a href="#biography">Biography</a></li>
+      <li><a href="#why-alt-school">Why Alt School Africa</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#join-alt-school">Join Alt School Africa</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <div class="hero-content">
+      <h1>DAVID OBINTA - ALT_SCHOOLER</h1>
+      <p>Welcome to my personal page where you can learn more about my journey and aspirations.</p>
+    </div>
+  </header>
+
+  <section id="school-id" class="info-section">
+    <h2>School ID</h2>
+    <p>ALT/SOE/024/0930</p>
+  </section>
+
+  <section id="biography" class="info-section">
+    <h2>Biography</h2>
+    <img src="assets/images/dave1.jpeg" alt="my pic" width="180" height="auto" />
+    <p>David Obinta is the fourth child in the family, with three siblings: two elder sisters and one elder brother, making me the youngest. Born in the early 2000s (the Gen Z era). I have learned self-discipline, commitment, focus, and diligence in achieving set goals. I am currently studying <b>Biomedical Technology</b> at the university, a course that combines medicine and engineering to build lifelines for patients who seem to have lost hope due to various predicaments.</p>
+  </section>
+
+  <section id="why-alt-school" class="info-section">
+    <h2>Why I Joined Alt School Africa</h2>
+    <p>I joined AltSchool Africa through my sponsor mentor, who I reached out to for work experience. He recommended studying in a learning space to be in a community with the same vision while engaging in self-learning. My aim at AltSchool Africa is to explore the tech path, understand what it’s like to be a <b>Cloud Engineer</b>, <b>get certified</b>, and <b>provide solutions</b> in the tech space.</p>
+  </section>
+
+  <section id="goals" class="info-section">
+    <h2>Goals for the School of Engineering Programme</h2>
+    <p>I have several goals for my program at AltSchool Africa, but here are a few:</p>
+    <ol>
+      <li>To gain formal knowledge on the basics of coding and programming.</li>
+      <li>To develop problem-solving skills through practical projects.</li>
+      <li>To collaborate with peers and mentors in a dynamic learning environment.</li>
+      <li>To prepare for a successful career in engineering and technology.</li>
+      <li>To dive into the Cloud Engineering space and establish my tech goals through my degree at AltSchool Africa.</li>
+      <li>And of course, to land a well-paying job... more than six figures in hard currencies... lolllzzz</li>
+    </ol>
+  </section>
+
+  <section id="join-alt-school" class="info-section">
+    <h2>Join Alt School Africa</h2>
+    <p>I hope this webpage has sparked your interest in advancing in tech. I highly recommend <b>AltSchool Africa</b> to you, so don’t sit back—hit the link below and join us... See you soon!</p>
+    <a href="joinaltschool.html">Click here to join Alt School</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 DAVID OBINTA</p>
+    <a href="#home">Back to Top</a>
+  </footer>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDt7X1E7aeU_miEwV4u7vIxaZ8xEqABCDM",
+      authDomain: "altschool-africa-karatu-1.firebaseapp.com",
+      projectId: "altschool-africa-karatu-1",
+      storageBucket: "altschool-africa-karatu-1.appspot.com",
+      messagingSenderId: "820386114684",
+      appId: "1:820386114684:web:d5378fcb1d7de35c706df9",
+      measurementId: "G-NQJX1HWCTH"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+ 
+</body>
+</html>

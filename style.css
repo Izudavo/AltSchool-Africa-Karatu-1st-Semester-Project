@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navigation styling */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navigation */
+    align-items: center;
+  }
+  
+  /* Hide checkbox input */
+  .nav-toggle-checkbox {
+    display: none;
+  }
+  
+  /* Toggle button (hamburger) */
+  .nav-toggle {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .nav-toggle-icon {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+  }
+  
+  .nav-toggle-icon:before,
+  .nav-toggle-icon:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+  }
+  
+  .nav-toggle-icon:before {
+    top: -8px;
+  }
+  
+  .nav-toggle-icon:after {
+    top: 8px;
+  }
+  
+  /* Menu styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide menu by default */
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      right: 0;
+    }
+  
+    nav ul.show {
+      display: flex; /* Show menu when toggled */
+    }
+  
+    .nav-toggle {
+      display: block; /* Show toggle button on small screens */
+    }
+  
+    .nav-toggle-checkbox:checked ~ ul {
+      display: flex;
+    }
+  }
+  
+  
+  header .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Section styling */
+  .info-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2 {
+    margin-top: 0;
+  }
+  
+  .info-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
